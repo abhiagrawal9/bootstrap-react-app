@@ -1,0 +1,57 @@
+{
+  "name": "@abhiagrawal9/bootstrap-react-app",
+  "description": "Create React apps with no build configuration.",
+  "version": "0.0.1",
+  "author": "Abhishek Agrawal",
+  "license": "MIT",
+  "scripts": {
+    "build": "ncc build src/index.ts --minify --no-cache --no-source-map-register",
+    "format": "prettier --write .",
+    "bumpversion:major": "yarn version --no-git-tag-version --major",
+    "bumpversion:minor": "yarn version --no-git-tag-version --minor",
+    "bumpversion:patch": "yarn version --no-git-tag-version --patch"
+  },
+  "bin": {
+    "bootstrap-react-app": "./dist/index.js",
+    "bra": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "react-dom",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abhiagrawal9/bootstrap-react-app"
+  },
+  "bugs": {
+    "url": "https://github.com/abhiagrawal9/bootstrap-react-app/issues"
+  },
+  "devDependencies": {
+    "@types/cross-spawn": "6.0.0",
+    "@types/gradient-string": "^1.1.2",
+    "@types/node": "^12.6.8",
+    "@types/prompts": "2.0.1",
+    "@types/rimraf": "3.0.0",
+    "@types/validate-npm-package-name": "3.0.0",
+    "@vercel/ncc": "0.34.0",
+    "chalk": "2.4.2",
+    "commander": "2.20.0",
+    "conf": "10.2.0",
+    "cpy": "7.3.0",
+    "cross-spawn": "6.0.5",
+    "gradient-string": "^2.0.2",
+    "prettier": "^2.8.4",
+    "prompts": "2.1.0",
+    "rimraf": "3.0.2",
+    "typescript": "4.8.2",
+    "update-check": "1.5.4",
+    "validate-npm-package-name": "3.0.0"
+  },
+  "engines": {
+    "node": ">=14.6.0"
+  }
+}
